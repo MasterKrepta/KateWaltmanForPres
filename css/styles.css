@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Variables */
+:root {
+  --bg-main: #042c3b;
+  --bg-highlight: #d33607;
+  --text-primary: #6dafec;
+  --text-light: #83cbec;
+  --text-dark: #104f68;
+}
+
+/* Gen Styles */
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.7em;
+  background-color: var(--text-light);
+  color: var(--text-dark);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+a:hover {
+  color: var(--text-light);
+}
+
+li {
+  display: inline;
+}
+
+section {
+  margin: 0;
+  border-bottom: 1px solid var(--text-dark);
+}
+
+input {
+  margin: 10px;
+  padding: 9px;
+  background-color: var(--text-light);
+  border-color: var(--text-dark);
+}
+
+/* Utilities */
+.centered {
+  text-align: center;
+  padding: 1em;
+}
+
+.container-fluid,
+.img-fluid {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  color: var(--text-light);
+  background-color: var(--bg-main);
+  padding: 5px 15px;
+  border: none;
+}
+
+.g-1x3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.g-2 {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.g-3x1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fas,
+fab {
+  padding: 15px;
+}
+
+/* Nav */
+#main-nav {
+  background: var(--bg-main);
+  color: var(--text-light);
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+#main-nav #logo {
+  text-align: start;
+}
+
+#main-nav ul {
+  text-align: end;
+  font-size: 1.8em;
+}
+
+/* Landing */
+#landing {
+  background-color: var(--text-primary);
+  padding: 30px;
+  min-height: 70vh;
+}
+
+#profile {
+  border-radius: 50%;
+}
+
+.lead {
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+/* Mailing list */
+.mailing-list {
+  text-align: center;
+  margin-top: 25px;
+  padding: 15px;
+  background-color: var(--bg-highlight);
+  border-radius: 35px;
+  max-width: 700px;
+  max-height: 300px;
+}
+
+/* Issues */
+#issues {
+  background-color: aliceblue;
+}
+
+.card {
+  text-align: center;
+  max-width: 300px;
+  border: 1px grey solid;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 35px;
+}
+
+/* Media */
+.card-wide {
+  max-width: 100%;
+  border: 1px grey solid;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 35px;
+}
+
+.card-wide p {
+  padding: 1em;
+}
+
+/* Social */
+#social {
+  background-color: aliceblue;
+}
+
+/* Footer */
+.main-footer {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+}
+
+.credit {
+  font-size: .5em;
+}
